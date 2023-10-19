@@ -23,13 +23,13 @@ namespace SzuperhosProjekt
 
         public abstract bool MegmentiAVilagot();
 
-        public bool LegyoziE(ISzuperhos szuperhos)          //4-dik feladat utolsó előtti hiányzik
+        public bool LegyoziE(ISzuperhos szuperhos)          
         {
             if(szuperhos is Bosszuallo && this.VanEGyengesege == true && this.MekkoraAzEreje() < szuperhos.MekkoraAzEreje())
             {
                 return true;
             }
-            else if (szuperhos is Batman && this.MekkoraAzEreje() * 2 > szuperhos.MekkoraAzEreje())
+            else if (szuperhos is Batman && this.MekkoraAzEreje() / 2 >= szuperhos.MekkoraAzEreje())
             {
                 return true;
             }

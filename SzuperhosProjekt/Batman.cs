@@ -20,7 +20,7 @@ namespace SzuperhosProjekt
 
         public void KutyutKeszit()
         {
-            Lelemenyesseg =+ 50;
+            this.Lelemenyesseg = this.Lelemenyesseg + 50;
         }
 
         public bool LegyoziE(ISzuperhos szuperhos)
@@ -30,12 +30,12 @@ namespace SzuperhosProjekt
 
         public double MekkoraAzEreje()
         {
-            return Lelemenyesseg * 2;
+            return this.Lelemenyesseg * 2;
         }
 
         public override string ToString()
         {
-            return $"Batman: leleményesség: {this.lelemenyesseg}";
+            return $"Batman: leleményesség: {this.Lelemenyesseg}";
         }
     }
 }
