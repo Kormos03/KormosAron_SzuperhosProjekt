@@ -10,7 +10,8 @@ namespace SzuperhosProjekt
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Kepregeny.Szereplok("./database.txt");
+            Kepregeny.Szuperhosok();
         }
     }
 }

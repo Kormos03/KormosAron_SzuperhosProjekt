@@ -11,9 +11,9 @@ namespace SzuperhosProjekt
     {
         private double lelemenyesseg;
 
-        public Batman(double lelemenyesseg)
+        public Batman()
         {
-            lelemenyesseg = 100;
+            this.lelemenyesseg = 100;
         }
 
         public double Lelemenyesseg { get => lelemenyesseg; set => lelemenyesseg = value; }

@@ -8,10 +8,11 @@ namespace SzuperhosProjekt
 {
     public class Vasember : Bosszuallo, IMilliardos
     {
-        public Vasember(double szuperero, bool vanEGyengesege) : base(szuperero, vanEGyengesege)
+
+        public Vasember() : base(150,true)
         {
-            szuperero = 150;
-            vanEGyengesege = true;
+            this.Szuperero = 150;
+            this.VanEGyengesege = true;
         }
 
         public void KutyutKeszit()
@@ -24,9 +25,9 @@ namespace SzuperhosProjekt
             return Szuperero > 1000 ? true : false;
         }
 
-        public new string ToString()
+        public override string ToString()
         {
-            return $"Vasember: Szupererő: {this.Szuperero} {(this.VanEGyengesege ? "van" : "nincs")} gyengesége";
+            return $"Vasember: Szupererő: {this.Szuperero}; {(this.VanEGyengesege ? "van" : "nincs")} gyengesége";
         }
     }
 }
